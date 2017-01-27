@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from scripts import parliament_data as p
+from .scripts import parliament_data as p
 
 # Create your views here.
 def index(request):

@@ -1,7 +1,5 @@
 import requests, re
 
-
-
 class Issue:
     def __init__(self, question, answer=None, url=None):
         self.__question = question

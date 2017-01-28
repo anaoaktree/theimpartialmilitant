@@ -8,7 +8,7 @@
 <section class="container">
     <div class="row">
         {% for issue in issues %}
-        <article class="column">
+        <article class="col-md-4">
             <h5> {{ issue.question }} </h5>
             <p> {{ issue.answer }} </p>
             <a href="{{ issue.url }}">{{ issue.url }}</a>

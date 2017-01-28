@@ -3,25 +3,22 @@
 {% block body %}
 
 <header>
-<h1>Questions from parliament</h1>
+    <h1>Questions from parliament</h1>
 </header>
-<div class="container">
-<section>
+<section class="container">
     <div class="row">
-      {% for issue in issues %}
-            <article class="column">
-              <h5> {{ issue.question }} </h5>
-              <p> {{ issue.answer }} </p>
-              <a href="{{ issue.url }}">{{ issue.url }}</a>
-            </article>
-            {% if forloop.counter|divisibleby:3 %}
-        </div>
-        <div class="row">
- {% endif %}
-      {% endfor %}
+        {% for issue in issues %}
+        <article class="column">
+            <h5> {{ issue.question }} </h5>
+            <p> {{ issue.answer }} </p>
+            <a href="{{ issue.url }}">{{ issue.url }}</a>
+        </article>
+        {% if forloop.counter|divisibleby:3 %}
     </div>
-    </section>
-
-</div>
+    <div class="row">
+        {% endif %}
+        {% endfor %}
+    </div>
+</section>
 
 {% endblock %}

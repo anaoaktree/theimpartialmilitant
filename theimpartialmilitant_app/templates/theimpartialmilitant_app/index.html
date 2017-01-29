@@ -1,11 +1,15 @@
 {% extends 'main/base.html' %}
 
 {% block body %}
-
 <header>
-    <h1>Questions from parliament</h1>
+    <h3>Data from parliament.gov.uk</h3>
+    <p>Uses the API to get questions and answers</p>
 </header>
+
 <section class="container">
+    <header>
+        <h1>Questions from parliament</h1>
+    </header>
     <div class="row">
         {% for issue in issues %}
         <article class="col-md-4">
@@ -20,5 +24,7 @@
         {% endfor %}
     </div>
 </section>
+
+<footer>Work in progress scrapper built by anaoaktree.Go to <a href="">Github</a></footer>
 
 {% endblock %}

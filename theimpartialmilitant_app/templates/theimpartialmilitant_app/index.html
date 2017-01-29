@@ -2,13 +2,13 @@
 
 {% block body %}
 <header>
-    <h3>Data from parliament.gov.uk</h3>
-    <p>Uses the API to get questions and answers</p>
+    <h2>Data from parliament.uk</h2>
+    <p>Uses the data <a href="http://explore.data.parliament.uk/">here</a> to get questions and answers. Clearly still a work in progress :) </p>
 </header>
 
 <section class="container">
     <header>
-        <h1>Questions from parliament</h1>
+        <h3>Questions from parliament</h3>
     </header>
     <div class="row">
         {% for issue in issues %}
